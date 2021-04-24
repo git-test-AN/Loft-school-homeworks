@@ -1,21 +1,8 @@
-
-<table>
-    <caption></caption>
-    <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr><td> </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> </td><td> </td><td> </td><td> </td></tr>
-</table>
-<pre>
 <?php
 
-
+echo '<table border="1">';
 for ($a = 1; $a <= 10; $a++) {
+    echo "<tr>";
     for ($b = 1; $b <= 10; $b++) {
         $n = $a * $b;
         if ($a % 2 == 0 && $b % 2 == 0) {
@@ -28,9 +15,9 @@ for ($a = 1; $a <= 10; $a++) {
                  $p = $n;
              }
          }
-        echo '| ', $p, ' |';
+        echo "<td> $p </td>";
     }
-    echo "\n";
+    echo "</tr>" , "\n";
 }
-
+echo "</table>";
 
