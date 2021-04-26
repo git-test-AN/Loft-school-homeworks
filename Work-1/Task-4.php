@@ -2,13 +2,17 @@
 <?php
 
 $day = rand(-3, 14);
-$day = rand(-1, 1);
 echo "Текущий день на этой неделе: $day\n";
-switch (true) {
-    case ($day >= 1 && $day <= 5):
+switch ($day) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
         echo "Это рабочий день";
         break;
-    case ($day >= 6 && $day <= 7):
+    case 6:
+    case 7:
         echo "Это выходной день";
         break;
     default:
