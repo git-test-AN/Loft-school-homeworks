@@ -1,0 +1,14 @@
+{
+
+  "require": {
+    "swiftmailer/swiftmailer": "dev-master",
+    "phpmailer/phpmailer": "dev-master",
+    "twig/twig": "^2.0",
+    "symfony/filesystem": "dev-master",
+    "nesbot/carbon": "dev-master"
+  },
+
+  "autoload": {
+    "psr-4": {}
+  }
+}
